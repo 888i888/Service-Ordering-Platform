@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Service Ordering Platform - Connect with neighbors for reliable services." />
+  <meta name="keywords" content="services, neighborhood, house cleaning, babysitting, repairs, ride sharing" />
+  <title>Service Ordering</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <button class="burger" onclick="toggleMenu()">☰</button>
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Join us</a></li>
+        <li><a href="#">Place an Order</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a name="#">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Service Ordering Platform</h1>
+  </header>
+
+  <section id="hero">
+    <h2>
+      <em>“Offering various services in the neighborhood! Reliable, efficient,
+        and always happy to help.”</em>
+    </h2>
+    <button> Let’s connect!</button>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="service-list" id="serviceList">
+      <div class="service">
+        <a href="#"><button class="serv">House cleaning</button></a>
+      </div>
+      <div class="service">
+        <button class="serv">Babysitting & childcare</button>
+      </div>
+      <div class="service">
+        <button class="serv">Home repairs & services</button>
+      </div>
+      <div class="service"><button class="serv">Ride sharing</button></div>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NDI4MTAyMzB8&ixlib=rb-4.0.3&q=85" class="examp1" alt="House cleaning" />
+      <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NDI4MTAyODd8&ixlib=rb-4.0.3&q=85" class="examp2" alt="Childcare" />
+      <img src="https://images.unsplash.com/photo-1505798577917-a65157d3320a?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NDI4OTczNTF8&ixlib=rb-4.0.3&q=85" class="examp3" alt="Repairs" />
+      <img src="https://images.unsplash.com/photo-1639444101905-e37a3144a3b9?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NDI4OTcyMzR8&ixlib=rb-4.0.3&q=85" class="examp4" alt="Ride sharing" />
+    </div>
+  </section>
+
+  <section id="join">
+    <h3>
+      “Join those offering services in the neighborhood!<br />
+      Connect, collaborate, and help each other out.”
+    </h3>
+
+    <form id="addServiceForm">
+      <input type="text" id="newService" placeholder="Service Name" required />
+      <input type="text" id="userName" placeholder="Your Name" required />
+      <input type="text" id="userContact" placeholder="Your Contact" required />
+      <button type="submit">Join</button>
+    </form>
+  </section>
+
+  <section id="order">
+    <h2>Place an Order</h2>
+    <form id="orderForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="text" id="location" placeholder="Your Location" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <select id="serviceSelect">
+        <option value="House cleaning">House cleaning</option>
+        <option value="Babysitting">Babysitting</option>
+        <option value="Home repairs">Home repairs</option>
+        <option value="Ride sharing">Ride sharing</option>
+      </select>
+      <button type="submit">Find a neighbor</button>
+    </form>
+  </section>
+
+  <section id="reviews">
+    <h2>Neighbors Reviews</h2>
+    <div class="review">
+      "Great service, fast execution!" - Alex
+      <button class="delete-btn">Delete</button>
+    </div>
+    <div class="review">
+      "Top-quality work!" - Maria
+      <button class="delete-btn">Delete</button>
+    </div>
+
+    <!-- Add Review Form -->
+    <h3>Leave a Review</h3>
+    <form id="reviewForm">
+      <textarea id="reviewText" placeholder="Write your review here" required></textarea>
+      <input type="text" id="reviewName" placeholder="Your Name" required />
+      <button type="submit">Submit Review</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: igor_palun@icloud.com</p>
+    <p>Phone: +316 269 47 204</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Service Ordering Platform</p>
+    <a href="privacy.html">Privacy Policy</a> |
+    <a href="terms.html">Terms of Service</a>
+  </footer>
+</body>
+
+</html>
